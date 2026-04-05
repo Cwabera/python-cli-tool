@@ -30,7 +30,7 @@ class User:
             raise ValueError("task must be a Task object")
 
         self.tasks.append(task)
-        print(f"Task '{task.title}' added for user '{self.name}'.")
+        print(f"📌 Task '{task.title}' added to {self.name}.")
 
     def get_task_by_title(self, title):
         for task in self.tasks:
